@@ -1,7 +1,7 @@
 apiVersion: v1
 items:
 - apiVersion: networking.rias.ibm.com/v1alpha1
-  kind: LBPoolMember
+  kind: LBPoolMember-test
   metadata:
     annotations:
       Description: LBPoolMember CRD entry - adding new info

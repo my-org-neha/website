@@ -4,7 +4,7 @@ items:
   kind: LBPoolMember
   metadata:
     annotations:
-      Description: LBPoolMember CRD entry
+      Description: LBPoolMember CRD entry - adding new info
       RequestID: b3a5ec74-04c1-40de-bd79-948c9c0f78d4
       customresourceversion.genctl.ibm.com: "5592640105"
       customresourceversion.genctl.ibm.com/0716: "5592640105"

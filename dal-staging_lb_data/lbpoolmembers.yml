@@ -1,0 +1,85 @@
+apiVersion: v1
+items:
+- apiVersion: networking.rias.ibm.com/v1alpha1
+  kind: LBPoolMember
+  metadata:
+    annotations:
+      Description: LBPoolMember CRD entry
+      RequestID: b3a5ec74-04c1-40de-bd79-948c9c0f78d4
+      customresourceversion.genctl.ibm.com: "5592640105"
+      customresourceversion.genctl.ibm.com/0716: "5592640105"
+    creationTimestamp: "2023-04-10T19:28:12Z"
+    finalizers:
+    - projection.genctl.ibm.com/0716
+    generation: 1
+    labels:
+      LBPoolID: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6-lbp
+      LoadBalancerID: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+      LoadBalancerPoolID: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6
+      LoadBalancerPoolMemberID: r134-efed7a70-7c0c-4f9a-9c49-7e67a3515b26
+      ResourceGroup: d40a91d8cace4217b30ed5d66ae73a8f
+      ResourceName: blurt-portside-doorknobs-darn
+      VPCID: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b
+      ZoneBitmask: "0716"
+    name: 0716-efed7a70-7c0c-4f9a-9c49-7e67a3515b26
+    namespace: a84a3ddbb52c469ab308c8b5ae300b55
+    ownerReferences:
+    - apiVersion: networking.rias.ibm.com/v1alpha1
+      blockOwnerDeletion: true
+      controller: true
+      kind: LBPool
+      name: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6-lbp
+      uid: 2132b5fd-3aed-4c0d-bada-a7b261cdac6e
+    resourceVersion: "5598092279"
+    uid: 020e4980-fb5d-4e6b-803c-bbd3efbf888c
+  spec:
+    createdAt: ""
+    protocolPort: 443
+    vnicId: 0716-7e44928f-1cab-431e-855a-e831bd5705bd
+    weight: 50
+    zone: "0716"
+  status:
+    healthState: down
+- apiVersion: networking.rias.ibm.com/v1alpha1
+  kind: LBPoolMember
+  metadata:
+    annotations:
+      Description: LBPoolMember CRD entry
+      RequestID: 853d5812-f610-4f0c-b2e0-df45a8f3fdcc
+      customresourceversion.genctl.ibm.com: "5592620405"
+      customresourceversion.genctl.ibm.com/0726: "5592620405"
+    creationTimestamp: "2023-04-10T19:23:07Z"
+    finalizers:
+    - projection.genctl.ibm.com/0726
+    generation: 1
+    labels:
+      LBPoolID: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6-lbp
+      LoadBalancerID: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+      LoadBalancerPoolID: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6
+      LoadBalancerPoolMemberID: r134-1a0ba29b-cbd2-4d5c-997b-01735aec6673
+      ResourceGroup: d40a91d8cace4217b30ed5d66ae73a8f
+      ResourceName: grandpa-engross-dragster-tameness
+      VPCID: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b
+      ZoneBitmask: "0726"
+    name: 0726-1a0ba29b-cbd2-4d5c-997b-01735aec6673
+    namespace: a84a3ddbb52c469ab308c8b5ae300b55
+    ownerReferences:
+    - apiVersion: networking.rias.ibm.com/v1alpha1
+      blockOwnerDeletion: true
+      controller: true
+      kind: LBPool
+      name: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6-lbp
+      uid: 2132b5fd-3aed-4c0d-bada-a7b261cdac6e
+    resourceVersion: "5598091953"
+    uid: 37c801f3-1e17-4847-aa30-2d7d524846db
+  spec:
+    createdAt: ""
+    protocolPort: 443
+    vnicId: 0726-d2b34995-8485-4631-9894-e7ad594b05fd
+    weight: 50
+    zone: "0726"
+  status:
+    healthState: down
+kind: List
+metadata:
+  resourceVersion: ""

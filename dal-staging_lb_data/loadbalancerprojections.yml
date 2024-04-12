@@ -1,0 +1,40 @@
+apiVersion: networking.rias.ibm.com/v1alpha1
+kind: LoadBalancerProjection
+metadata:
+  creationTimestamp: "2023-04-10T19:12:11Z"
+  generation: 194
+  name: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+  namespace: a84a3ddbb52c469ab308c8b5ae300b55
+  ownerReferences:
+  - apiVersion: networking.rias.ibm.com/v1alpha1
+    kind: LoadBalancer
+    name: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+    uid: e5d67ef8-00ab-4ab1-8312-a411b310625e
+  resourceVersion: "5597913246"
+  uid: 19ba4e7c-e3fe-4d0c-95dc-f0274f7e7c3e
+status:
+  projections:
+    "0716":
+      allocated_origin_ips: []
+      allocated_origin_mac_addresses: []
+      loadBalancerListenerResourceVersion:
+        r134-101c9e0a-0235-4c20-a0a3-db060c3882db: "5597913238"
+      loadBalancerResourceVersion: "5597913238"
+      primary_zone_error: ""
+      primary_zone_ready: false
+    "0726":
+      allocated_origin_ips: []
+      allocated_origin_mac_addresses: []
+      loadBalancerListenerResourceVersion:
+        r134-101c9e0a-0235-4c20-a0a3-db060c3882db: "5597913238"
+      loadBalancerResourceVersion: "5597913238"
+      primary_zone_error: ""
+      primary_zone_ready: false
+    "0736":
+      allocated_origin_ips: []
+      allocated_origin_mac_addresses: []
+      loadBalancerListenerResourceVersion:
+        r134-101c9e0a-0235-4c20-a0a3-db060c3882db: "5597913238"
+      loadBalancerResourceVersion: "5597913238"
+      primary_zone_error: ""
+      primary_zone_ready: false

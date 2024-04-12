@@ -1,0 +1,62 @@
+apiVersion: networking.rias.ibm.com/v1alpha1
+kind: LoadBalancer
+metadata:
+  annotations:
+    Description: ""
+    RequestID: c1b268dc-ecd1-4455-acef-e06bc55ad339
+    lock_time: "2023-04-11T16:39:35Z"
+  creationTimestamp: "2023-04-10T19:12:11Z"
+  finalizers:
+  - bssevent.rias.ibm.com
+  - cleanup.rias.ibm.com
+  - projection.genctl.ibm.com/0716
+  - projection.genctl.ibm.com/0726
+  - projection.genctl.ibm.com/0736
+  generation: 3
+  labels:
+    LoadBalancerProjectionStatus: stable
+    RegionName: us-south
+    ResourceGroup: d40a91d8cace4217b30ed5d66ae73a8f
+    ResourceName: loadbalancer-0b2335e5-e
+    VPCID: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b
+  name: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+  namespace: a84a3ddbb52c469ab308c8b5ae300b55
+  ownerReferences:
+  - apiVersion: networking.rias.ibm.com/v1alpha1
+    blockOwnerDeletion: true
+    controller: true
+    kind: VPC
+    name: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b
+    uid: 31a52553-77f5-4722-9829-5949e5d202d7
+  resourceVersion: "5597913238"
+  uid: e5d67ef8-00ab-4ab1-8312-a411b310625e
+spec:
+  IsPublic: false
+  IsService: true
+  allocated_origin_ips: null
+  allocated_origin_mac_addresses: null
+  is_partner: false
+  is_private_path: false
+  listeners:
+  - created_at: "2023-04-10T19:17:27Z"
+    default_pool_id: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6
+    id: r134-101c9e0a-0235-4c20-a0a3-db060c3882db
+    port: 443
+    portMax: 443
+    protocol: tcp
+  operating_status: offline
+  primary_zone_ready: false
+  profile_name: network-scalable
+  reserved_ip_ids: null
+  serviceips:
+  - address: 10.12.65.29
+    pool_id: 726-virtual-ip-pool
+    zone: "0726"
+  - address: 10.12.66.31
+    pool_id: 736-virtual-ip-pool
+    zone: "0736"
+  - address: 10.12.64.30
+    pool_id: 716-virtual-ip-pool
+    zone: "0716"
+  subnet_id: ""
+  vpc_id: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b

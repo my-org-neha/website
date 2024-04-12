@@ -1,0 +1,64 @@
+apiVersion: v1
+items:
+- apiVersion: networking.rias.ibm.com/v1alpha1
+  kind: LoadBalancerPool
+  metadata:
+    annotations:
+      Description: ""
+      RequestID: 0f693ac1-c667-447f-975b-d95c8dbaaa08
+      lock_time: "2023-04-11T16:39:35Z"
+    creationTimestamp: "2023-04-10T19:17:27Z"
+    generation: 10
+    labels:
+      LoadBalancerID: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+      ResourceGroup: d40a91d8cace4217b30ed5d66ae73a8f
+      ResourceName: pool-32589101-5
+      VPCID: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b
+    name: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6
+    namespace: a84a3ddbb52c469ab308c8b5ae300b55
+    ownerReferences:
+    - apiVersion: networking.rias.ibm.com/v1alpha1
+      blockOwnerDeletion: true
+      controller: true
+      kind: LoadBalancer
+      name: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+      uid: e5d67ef8-00ab-4ab1-8312-a411b310625e
+    resourceVersion: "5597913236"
+    uid: c3e42ec2-c145-467f-b867-2921114f478f
+  spec:
+    algorithm: weighted_round_robin
+    health_monitor:
+      delay: 30
+      max_retries: 3
+      timeout: 10
+      type: tcp
+    pool_member_list:
+    - auto_delete: true
+      created_at: "2023-04-10T19:23:06Z"
+      id: r134-1a0ba29b-cbd2-4d5c-997b-01735aec6673
+      protocol_port: 443
+      status: available
+      target:
+        account: a84a3ddbb52c469ab308c8b5ae300b55
+        id: 0726-d2b34995-8485-4631-9894-e7ad594b05fd
+        primary_ipv4_address: ""
+        vsi_id: 0726_b183f053-2492-4ecc-8171-f6d668a499f0
+      weight: 50
+      zone: "0726"
+    - auto_delete: true
+      created_at: "2023-04-10T19:28:10Z"
+      id: r134-efed7a70-7c0c-4f9a-9c49-7e67a3515b26
+      protocol_port: 443
+      status: available
+      target:
+        account: a84a3ddbb52c469ab308c8b5ae300b55
+        id: 0716-7e44928f-1cab-431e-855a-e831bd5705bd
+        primary_ipv4_address: ""
+        vsi_id: 0716_4f1cef29-d9d5-4fbb-9f40-5d2812ad41cd
+      weight: 50
+      zone: "0716"
+    protocol: tcp
+    proxy_protocol: disabled
+kind: List
+metadata:
+  resourceVersion: ""

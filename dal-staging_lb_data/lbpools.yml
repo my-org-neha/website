@@ -1,0 +1,46 @@
+apiVersion: v1
+items:
+- apiVersion: networking.rias.ibm.com/v1alpha1
+  kind: LBPool
+  metadata:
+    annotations:
+      Description: LBPool CRD entry
+      RequestID: 976464eb-c6ea-4459-8918-ad320803714b
+      customresourceversion.genctl.ibm.com: "5592599223"
+      customresourceversion.genctl.ibm.com/0716: "5592599223"
+      customresourceversion.genctl.ibm.com/0726: "5592599223"
+      customresourceversion.genctl.ibm.com/0736: "5592599223"
+    creationTimestamp: "2023-04-10T19:17:27Z"
+    finalizers:
+    - projection.genctl.ibm.com/0716
+    - projection.genctl.ibm.com/0726
+    - projection.genctl.ibm.com/0736
+    generation: 1
+    labels:
+      LoadBalancerID: r134-323a3802-cbaa-4272-812a-abfeee805ffa
+      LoadBalancerPoolID: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6
+      ResourceGroup: d40a91d8cace4217b30ed5d66ae73a8f
+      ResourceName: pool-32589101-5
+      VPCID: r134-0b4b96b0-bf83-4839-afcc-1f7ae394ca1b
+    name: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6-lbp
+    namespace: a84a3ddbb52c469ab308c8b5ae300b55
+    ownerReferences:
+    - apiVersion: networking.rias.ibm.com/v1alpha1
+      blockOwnerDeletion: true
+      controller: true
+      kind: LoadBalancerPool
+      name: r134-eb908738-7f10-4d17-be2e-ff2b831d3ea6
+      uid: c3e42ec2-c145-467f-b867-2921114f478f
+    resourceVersion: "5592599234"
+    uid: 2132b5fd-3aed-4c0d-bada-a7b261cdac6e
+  spec:
+    algorithm: weighted_round_robin
+    healthMonitor:
+      delay: 30
+      max_retries: 3
+      timeout: 10
+      type: tcp
+    protocol: tcp
+kind: List
+metadata:
+  resourceVersion: ""

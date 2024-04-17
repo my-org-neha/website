@@ -7,3 +7,5 @@ created new branch
 updated line 1
 
 updated line 2
+
+conflict in local
